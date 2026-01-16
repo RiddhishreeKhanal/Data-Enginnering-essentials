@@ -1,0 +1,5 @@
+provide the Playwright Python script skeleton for scraping a website to extract details about the articles listed
+how do i handle the category of the article without it returning category = "null" here is the code snippet :
+@scraper.py (92-94) 
+How do i handle the missing elements using try except block in my code
+while iterating through the articles, after the 2nd article image_url can't be fetched:@scraper.py (121-131) 
