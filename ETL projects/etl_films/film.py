@@ -21,7 +21,7 @@ for row in rows:
         col = row.find_all('td')
         if len(col)!=0:
             data_dict = {"Average Rank": int(col[0].contents[0]),
-                         "Film": str(col[1].contents[0]),
+                         "Film": str(col[1].get_text(strip=True)),
                          "Year": int(col[2].contents[0])}
             df1 = pd.DataFrame(data_dict, index=[0])
 
