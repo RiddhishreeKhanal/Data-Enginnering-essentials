@@ -1,6 +1,4 @@
-import json
 import requests
-import sqlite3
 import pandas as pd
 from bs4 import BeautifulSoup
 
@@ -34,7 +32,7 @@ for row in rows:
 
 print(df.to_string(index=False))
 
-
+#saving to csv
 df.to_csv(csv_path, index=False)
 
 #saving to json
