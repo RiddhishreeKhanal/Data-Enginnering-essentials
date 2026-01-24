@@ -1,3 +1,4 @@
+import json
 import requests
 import sqlite3
 import pandas as pd
@@ -35,3 +36,9 @@ print(df.to_string(index=False))
 
 
 df.to_csv(csv_path, index=False)
+
+#saving to json
+df.to_json("ETL projects/etl_films/top_50_films.json", 
+           orient="records", 
+           indent=4)
+
